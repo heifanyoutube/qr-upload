@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QR Code 上傳系統</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>QR Code 圖片上傳</h1>
+
+  <button id="login-btn">使用 Google 登入</button>
+  <button id="logout-btn" style="display:none;">登出</button>
+
+  <div id="upload-section" style="display:none;">
+    <input type="file" id="file-input" multiple accept="image/*" />
+    <button id="upload-btn">上傳圖片</button>
+    <div id="status"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-storage-compat.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
